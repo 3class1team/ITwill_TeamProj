@@ -93,14 +93,15 @@
                                 
                                 <div class="product__item">
                                     <div data-setbg="${list.movieImage}" style="background-size:contain;" class="product__item__pic set-bg" >
-                                        <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> ${list.movieTime}</div>
                                     </div>
-                                    <div class="product__item__text">
+                                    <div class="product__item__text" style="text-align: center;">
                                         <ul>
                                             <li>${list.CN1}</li>
-                                            <li>${list.CN2}</li>
+											<c:if test="${list.CN2 != null}">
+												<li>${list.CN2}</li>
+											</c:if>
                                         </ul>
                                         <h5><a href="#">${list.movieName}</a></h5>
                                     </div>
